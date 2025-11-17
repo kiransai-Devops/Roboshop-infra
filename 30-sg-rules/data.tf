@@ -18,3 +18,7 @@ data "aws_ssm_parameter" "redis_sg_id" {
 data "aws_ssm_parameter" "rabbitmq_sg_id" {
   name = "/${var.project_name}/${var.Env}/rabbitmq_sg_id"
 }
+
+data "aws_ssm_parameter" "mysql_sg_id" {
+  name = "/${var.project_name}/${var.Env}/mysql_sg_id"
+}
